@@ -96,7 +96,7 @@ jobs:
         description: ${{ steps.security_check.outcome }}
 
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v5.1.1
+      uses: aws-actions/configure-aws-credentials@v6.1.0
       with:
         aws-region: us-east-1
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
